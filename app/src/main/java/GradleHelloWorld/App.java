@@ -5,8 +5,12 @@ package GradleHelloWorld;
 
 public class App {
     public String getGreeting() {
-        String password = "this is password";
         return "Hello World!";
+    }
+    protected void doGet(HTTPServletRequest request, HTTPServletResponse response){
+        throws servletException, IOException{
+            response.sendRedirect(request.getParameter("target"));
+        }
     }
 
     public static void main(String[] args) {
