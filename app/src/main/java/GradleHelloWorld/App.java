@@ -5,6 +5,7 @@ package GradleHelloWorld;
 
 public class App {
     public String getGreeting() {
+        String password = "this is password";
         return "Hello World!";
     }
 
